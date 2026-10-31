@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>PARTICULARIS — The Presence of the Absent | Cultural Study 001</title>
+<meta name="description" content="PARTICULARIS Cultural Study 001. A collectible expression of Old Town San Diego and Día de los Muertos. What We Remember, We Carry.">
+<style>
+:root{--black:#0c0b0a;--gold:#d9b778;--cream:#f1e7d4;--muted:#b9aa92;--rust:#b65d35;--mag:#a62f69}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--black);color:var(--cream);font-family:Georgia,'Times New Roman',serif}a{color:inherit;text-decoration:none}button{font:inherit;cursor:pointer}img{display:block;width:100%}
+header{position:absolute;top:0;z-index:5;width:100%;display:flex;align-items:center;justify-content:space-between;padding:25px 5%;gap:18px;background:linear-gradient(#080706bd,transparent)}
+.wordmark{font-size:clamp(17px,2vw,27px);letter-spacing:.12em;font-weight:bold}.wordmark small{display:block;font:9px Arial,sans-serif;letter-spacing:.42em;color:var(--gold);margin-top:5px}
+nav{display:flex;gap:24px;font:10px Arial,sans-serif;letter-spacing:.2em;text-transform:uppercase}nav a:hover{color:var(--gold)}
+.hero{min-height:100svh;position:relative;display:flex;align-items:flex-end;overflow:hidden;background:#18120f}
+.hero img{position:absolute;inset:0;height:100%;object-fit:cover;object-position:center 38%;filter:brightness(.63)}
+.hero:after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,#0c0b0a 0%,transparent 68%),linear-gradient(90deg,#0c0b0a99,transparent 65%)}
+.hero-content{position:relative;z-index:1;padding:150px 7% 9%;max-width:900px}
+.eyebrow{font:11px Arial,sans-serif;letter-spacing:.29em;text-transform:uppercase;color:var(--gold);line-height:1.8}
+h1,h2,h3,p{margin-top:0}h1{font-size:clamp(56px,8.6vw,136px);line-height:.93;letter-spacing:-.055em;font-weight:400;margin:25px 0}
+h2{font-size:clamp(38px,5.2vw,78px);line-height:1.07;font-weight:400;letter-spacing:-.035em}
+h3{font-size:clamp(24px,2.6vw,40px);font-weight:400}
+.lead{font-size:clamp(19px,2.1vw,28px);line-height:1.48;max-width:670px}.muted{color:var(--muted)}
+.cta{display:inline-block;background:var(--gold);color:#17110b;padding:17px 27px;border:1px solid var(--gold);font:11px Arial,sans-serif;font-weight:bold;letter-spacing:.2em;text-transform:uppercase;margin-top:24px;transition:.2s}
+.cta:hover{background:var(--cream)}.cta.outline{background:transparent;color:var(--gold)}.cta.outline:hover{background:#d9b77822}
+.section{padding:clamp(75px,10vw,150px) 7%}.narrow{max-width:920px;margin:auto;text-align:center}
+.narrow p{font-size:clamp(18px,2vw,25px);line-height:1.75}.gold-rule{height:1px;width:85px;background:var(--gold);margin:32px auto}
+.split{display:grid;grid-template-columns:1fr 1fr;gap:clamp(30px,6vw,110px);align-items:center}
+.split img{height:min(78vw,690px);object-fit:cover}.split p{font-size:19px;line-height:1.85;color:var(--muted)}
+.cream{background:#e8decb;color:#241c16}.cream .eyebrow{color:#955e2b}.cream p{color:#554b40}
+.statement{background:#17130f;text-align:center;padding:110px 7%}.statement h2{max-width:1100px;margin:25px auto;color:var(--gold)}
+.product-grid{display:grid;grid-template-columns:1.3fr 1fr;gap:18px}.product-grid img{height:100%;min-height:420px;object-fit:cover}.product-grid .secondary{display:grid;grid-template-rows:1fr 1fr;gap:18px}
+.full-photo{height:85vh;min-height:520px;position:relative}.full-photo img{height:100%;object-fit:cover;object-position:center 30%}
+.full-photo:after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,#0c0b0aa8,transparent 60%)}
+.photo-caption{position:absolute;z-index:1;bottom:45px;left:7%;font:12px Arial,sans-serif;letter-spacing:.18em;color:white}
+.pillars{display:grid;grid-template-columns:repeat(3,1fr);gap:35px;margin-top:60px}.pillar{border-top:1px solid #6b5534;padding-top:24px}.pillar span{color:var(--gold);font:11px Arial,sans-serif;letter-spacing:.2em}.pillar p{line-height:1.7;color:var(--muted)}
+.video{width:100%;max-height:76vh;background:#000;display:block}
+.acquisition{background:#e9dfce;color:#201913}.acquisition .eyebrow{color:#93642d}.acquisition p{color:#51463c}.acquisition .cta{background:#191511;color:#f5e7cb;border-color:#191511}
+.details{border-top:1px solid #9f9079;padding:18px 0;font:13px Arial,sans-serif;line-height:1.65;letter-spacing:.03em}
+.notice{font:12px Arial,sans-serif;line-height:1.7;color:#655b4e;margin-top:25px}
+footer{padding:70px 7% 45px;text-align:center}footer img{max-width:280px;margin:0 auto 20px}footer p{font:11px Arial,sans-serif;letter-spacing:.15em;color:var(--muted);line-height:2}
+.reveal{opacity:0;transform:translateY(24px);transition:opacity .7s,transform .7s}.reveal.show{opacity:1;transform:none}
+@media(max-width:750px){header{padding:20px 5%}nav{gap:12px;font-size:9px}nav a:first-child{display:none}.hero-content{padding:140px 6% 13%}.hero img{object-position:54% center}.split,.product-grid,.pillars{grid-template-columns:1fr}.split img{height:auto;max-height:680px}.product-grid .secondary{grid-template-columns:1fr 1fr;grid-template-rows:auto}.product-grid img{min-height:0}.section{padding:80px 6%}.full-photo{height:68vh;min-height:420px}}
+@media(prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}html{scroll-behavior:auto}}
+</style></head>
+<body>
+<header><a class="wordmark" href="#">PARTICULARIS<small>HUMAN AUTHORITY</small></a><nav><a href="#story">The Story</a><a href="#artifact">The Artifact</a><a href="#acquire">Acquire</a></nav></header>
+<main>
+<section class="hero"><img src="lifestyle-woman.jpg" alt="Model wearing the PARTICULARIS Día de los Muertos hoodie in a festive street setting"><div class="hero-content">
+<div class="eyebrow">Cultural Study 001 &nbsp; / &nbsp; Old Town · San Diego</div>
+<h1>The Presence<br>of the Absent.</h1>
+<p class="lead">What We Remember, We Carry.</p>
+<p class="muted">An original collectible expression inspired by Día de los Muertos, remembrance, and the extraordinary meaning of a particular place and time.</p>
+<a class="cta" href="#artifact">Discover the Artifact</a>
+</div></section>
+<section class="section" id="story"><div class="narrow reveal">
+<div class="eyebrow">01 / The Human Story</div><h2>Some connections never leave us.</h2><div class="gold-rule"></div>
+<p>There are places where history is not simply preserved. It is felt. In Old Town San Diego, Día de los Muertos brings remembrance into the present through marigolds, candles, photographs, music, and gatherings that honor those who came before us.</p>
+<p>Every detail carries a story. Every individual carries a different memory. What we remember, we carry.</p>
+</div></section>
+<section class="section cream"><div class="split">
+<div class="reveal"><div class="eyebrow">02 / A Particular Place</div><h2>Old Town.<br>Many histories.<br>One encounter.</h2><p>The architecture, streets, and cultural expressions of Old Town provide the setting for PARTICULARIS Cultural Study 001. We observe a place shaped by generations and interpret its visual details through original artwork.</p><p>The study does not claim to define or own the tradition. It invites closer observation, with respect for the Mexican communities whose practices give Día de los Muertos its enduring meaning.</p></div>
+<img src="front-back.png" alt="Front and back views of the PARTICULARIS cultural study hoodie">
+</div></section>
+<section class="statement"><div class="eyebrow">The PARTICULARIS Philosophy</div><h2 class="reveal">Meaning Within Meaning Within Meaning.</h2><p class="lead" style="margin:auto;color:var(--muted)">A particular person. A particular place. A particular time. An encounter that can never be repeated in precisely the same way.</p></section>
+<section class="section" id="artifact"><div class="eyebrow">03 / The Physical Expression</div><h2>A story you can carry.</h2>
+<div class="product-grid">
+<img src="garment-front.jpg" alt="Full front view of the detailed PARTICULARIS hoodie">
+<div class="secondary"><img src="garment-detail.jpg" alt="Close-up of the hoodie held to show the artwork"><img src="lifestyle-man.jpg" alt="Model wearing the PARTICULARIS hoodie"></div>
+</div><div class="pillars">
+<div class="pillar"><span>01 / PLACE</span><h3>Architecture</h3><p>Historic structures and geographic detail establish the encounter's setting.</p></div>
+<div class="pillar"><span>02 / TRADITION</span><h3>Remembrance</h3><p>Cempasúchil flowers, papel picado, calavera imagery, candles, and photographs invite layered discovery.</p></div>
+<div class="pillar"><span>03 / INDIVIDUAL</span><h3>Resonance</h3><p>The artifact carries an original story. The meaning it awakens belongs to the person who chooses it.</p></div>
+</div></section>
+<section class="full-photo"><img src="lifestyle-woman.jpg" alt="PARTICULARIS hoodie worn in an Old Town-inspired setting"><div class="photo-caption">CULTURAL STUDY 001 &nbsp; / &nbsp; WHAT WE REMEMBER, WE CARRY.</div></section>
+<section class="section"><div class="narrow"><div class="eyebrow">04 / The Moving Image</div><h2>The encounter, in motion.</h2><p>Explore the visual world of the first cultural study.</p></div><video class="video" controls playsinline preload="metadata" poster="lifestyle-woman.jpg"><source src="brand-film.mp4" type="video/mp4">Your browser does not support video playback.</video></section>
+<section class="section" style="background:#17130f"><div class="narrow reveal"><div class="eyebrow">05 / The Ecology of Intention</div><h2>Created only when chosen.</h2><div class="gold-rule"></div><p>PARTICULARIS does not manufacture speculative inventory in search of customers. Each physical artifact is made only after an individual chooses to acquire it.</p><p>No planned dead stock. No clearance cycle. No promotional discounting. A finite acquisition window, followed by the retirement of that edition.</p><p style="font-size:15px;color:var(--muted)">Made-to-order production avoids unsold speculative stock. Materials, printing, and delivery still have environmental impacts.</p></div></section>
+<section class="section acquisition" id="acquire"><div class="split">
+<div><img src="front-back.png" alt="Front and back of Cultural Study 001 hoodie"></div>
+<div><div class="eyebrow">06 / The Acquisition</div><h2>For a particular time.</h2><p class="lead">The cultural study remains. The opportunity to acquire this edition is finite.</p>
+<div class="details"><strong>STUDY</strong> &nbsp; 001 — The Presence of the Absent</div>
+<div class="details"><strong>PLACE</strong> &nbsp; Old Town, San Diego</div>
+<div class="details"><strong>FORMAT</strong> &nbsp; Made-to-order collectible hoodie</div>
+<div class="details"><strong>EDITION</strong> &nbsp; Acquisition dates to be announced</div>
+<div class="details"><strong>PRICE</strong> &nbsp; To be announced</div>
+<a class="cta" href="mailto:hello@example.com?subject=PARTICULARIS%20Cultural%20Study%20001%20Inquiry" id="interest-link">Acquisition Details Coming Soon</a>
+<p class="notice">The acquisition button is a placeholder, not an active checkout. Replace it with your storefront URL and publish verified price, sizing, shipping terms, and acquisition dates before launch.</p>
+</div></div></section>
+<section class="statement"><div class="eyebrow">The Human Moment</div><h2>Who do you carry with you?</h2><p class="lead" style="margin:auto">The technology enables a gesture. The individual brings its meaning.</p><p class="muted">A symbolic candle-lighting experience is envisioned as an optional moment of remembrance, independent of purchase.</p></section>
+</main><footer><img src="logo.png" alt="PARTICULARIS gold horizon emblem and Human Authority logo"><p>CREATION MAKES IT POSSIBLE. &nbsp; RESONANCE MAKES IT MEANINGFUL.<br>HUMAN AUTHORITY MAKES IT INTENTIONAL.</p><p>FOR THOSE WHO REFUSE TO BE ORDINARY.</p><p style="font-size:9px">© PARTICULARIS · CULTURAL STUDY 001</p></footer>
+<script>
+const obs=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('show');obs.unobserve(e.target)}}),{threshold:.1});
+document.querySelectorAll('.reveal').forEach(e=>obs.observe(e));
+document.getElementById('interest-link').addEventListener('click',e=>e.preventDefault());
+</script>
+</body></html>
